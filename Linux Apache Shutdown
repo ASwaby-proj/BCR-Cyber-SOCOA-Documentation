@@ -1,0 +1,86 @@
+Shift Log
+
+11/8/2025
+
+Scenario 1
+
+08:50 - Port Scan Low Severity
+Source IP 149.49.16.25 conducted a port scan on:
+10.221.90.20
+10.221.90.22
+10.221.90.23
+10.221.90.24
+10.221.90.25
+10.221.90.27
+Via Ports:
+110
+123
+21
+22
+23
+24
+25
+443
+80
+8080
+
+Not escalating at this time.
+
+Recommendations: 
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+
+10:00 - Protocol Fuzzing Medium Severity
+Source IP 149.49.16.25 conducted a protocol fuzzing attack on DMZ-Apache1 10.221.90.23, sending http traffic to port 22.
+
+Escalating to engineer.
+
+Recommendations: 
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+Disable verbose error messaging. 
+
+10:30 - Brute Force High Severity
+Source IP 149.49.16.25 conducted a brute force attack on DMZ-Apache1 10.221.90.23.
+TA successfully logged in as root.
+Escalating to engineer and supervisor.
+
+Recommendations:
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+Isolate the server from the network. 
+Restore from backup with updated configuration (disable verbose error messaging, and updated ssh password to complex password). 
+Perform Forensics.
+
+10:55 - Denial of Service High Severity
+Source IP 149.49.16.25 conducted a denial of service attack on DMZ-Apache1 10.221.90.23.
+Created a cron job that disabled apache2 every 5 min.
+Removed file and restarted service. 
+Escalating to engineer and supervisor. 
+
+Recommendations:
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+Isolate the server from the network. 
+Restore from backup with updated configuration (disable verbose error messaging, and updated ssh password to complex password). 
+Perform Forensics.
+
+
+
+
+
+
+
+
+
+
+
+
