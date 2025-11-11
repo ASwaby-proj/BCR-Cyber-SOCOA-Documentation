@@ -1,0 +1,56 @@
+11:55 - Web Crawling Low Severity
+Source IP 149.49.16.25 web crawled DMZ-IIS 10.221.90.27
+
+Recommendations: 
+Disable unneeded service.
+Block source IP.
+Remove from public facing if not required. 
+
+13:15 - Brute Force Attack High Severity
+Source IP 149.49.16.25 conducted a brute force attack on DMZ-IIS 10.221.90.27.
+TA successfully logged in as root via FTP. 
+Escalating engineer and supervisor. 
+
+Recommendations:
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+Isolate the server from the network. 
+Restore from backup with updated configuration (disable verbose error messaging, and updated ssh password to updated ftp complex password). 
+Perform Forensics.
+
+13:25 - Website Defacement Low Severity 
+Source IP 149.49.16.25 conducted a website defacement attack on DMZ-IIS 10.221.90.27.
+TA dropped a defaced page (index.html) in wwwroot.
+Removed file, restoring site.
+Escalate to engineer and supervisor
+
+Recommendations: 
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+Isolate the server from the network. 
+Restore from backup with updated configuration (disable verbose error messaging, and updated ssh password to updated ftp complex password). 
+Perform Forensics.
+
+13:30 Backdoor Attack Severity Low 
+Source IP 149.49.16.25 conducted a Backdoor attack on DMZ-IIS 10.221.90.27.
+Uploaded hack.php and upload.php establishing a backdoor.
+Removed Files, Restoring site.
+
+Recommendations: 
+Disable unneeded service.
+Modify Firewall rules.
+Block source IP.
+Remove from public facing.
+Isolate the server from the network. 
+Restore from backup with updated configuration (disable verbose error messaging, and updated ssh password to updated ftp complex password). 
+Perform Forensics.
+
+
+
+
+
+
